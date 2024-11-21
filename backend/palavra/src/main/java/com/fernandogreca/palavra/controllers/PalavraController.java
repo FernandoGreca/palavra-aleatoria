@@ -4,12 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fernandogreca.palavra.models.PalavraModel;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class PalavraController {
 
     List<PalavraModel> palavrasAleatorias = new ArrayList<>(List.of(
