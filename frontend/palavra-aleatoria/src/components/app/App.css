@@ -1,18 +1,47 @@
-.conteudo {
-    max-width: 450px;
+body {
+    background-color: #7986CB;
 }
 
-.tamanhoPalavra {
-    margin-bottom: 0;
-}
-
-.campo-resposta {
-    width: 350px;
-    input {
-        height: 40px;
+.container {
+    .conteudo {
+        max-width: 450px;
     }
 
-    button {
-        height: 40px;
+    .tamanhoPalavra {
+        margin-bottom: 0;
+    }
+
+    .campo-resposta {
+        width: 350px;
+
+        input {
+            height: 40px;
+        }
+
+        button {
+            height: 40px;
+        }
+    }
+
+    .lista-container {
+        max-height: 300px;
+        overflow-y: scroll;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px 0;
+            text-align: center;
+        }
+        
+
+        /* Personalização da barra de rolagem para Firefox */
+        scrollbar-width: normal;
+        /* Tamanho da barra de rolagem */
+        scrollbar-color: white transparent;
     }
 }
